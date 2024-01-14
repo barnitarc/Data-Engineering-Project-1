@@ -5,8 +5,8 @@ This data engineering project involves extracting, transforming, and loading (ET
 
 - Extract (extract.py):
 
-  * Reads data from different file formats such as CSV, Excel, and JSON.
-  * Downloads a zip file from GitHub containing source files, extracts the files, and creates DataFrames for further processing.
+  * Reads data from different file formats such as CSV, Excel, and JSON (uploaded in *Source Files* folder for reference).
+  * Downloads a zip file(*path : Source Files/Source Files.zip*) from GitHub containing source files, extracts the files, and creates DataFrames for further processing.
   * Fetches exchange rates for all countries based on USD from a specified URL(https://www.theglobaleconomy.com/rankings/Dollar_exchange_rate/).
 
 - Transform (transform.py):
@@ -21,7 +21,7 @@ This data engineering project involves extracting, transforming, and loading (ET
 - Load (load.py):
   
   * Utilizes the transform() function from transform.py to obtain the master DataFrame.
-  * Writes the final cleaned dataset to a CSV file (final.csv) in the specified directory (d:/Python for Data Engineering Project/Project1/Final File/).
+  * Writes the final cleaned dataset to a CSV file (final.csv) in the specified directory(uploaded in *Final File* folder).
   * Provides options for loading data into a SQL Server database.
   * db_connection(): Establishes a connection to the SQL Server database.
   * db_engine(): Creates a SQLAlchemy engine for database interaction.
